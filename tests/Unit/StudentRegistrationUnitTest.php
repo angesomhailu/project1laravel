@@ -6,7 +6,7 @@ use Tests\TestCase;
 use App\Models\Student;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class StudentRegistrationTest extends TestCase
+class StudentRegistrationUnitTest extends TestCase
 {
     use RefreshDatabase;
 
