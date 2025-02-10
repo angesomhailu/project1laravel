@@ -14,17 +14,23 @@ class StudentRegistrationUnitTest extends TestCase
     public function it_can_create_a_student()
     {
         $studentData = [
-            'name' => 'angesom bahre',
-            'email' => 'angesomhailu1414@gmail.com',
-            'student_id' => '1',
-            'course' => 'java',
+            'Fname' => 'angesom',
+            'Lname' => 'hailu',
+            'Email' => 'angesomhailu1414@gmail.com',
+            'User' => 'UGR/172185/12',
+            'Department' => 'software',
+            'Year' => '4',
         ];
 
         $students = Student::create($studentData);
 
         $this->assertDatabaseHas('students', [
-            'name' => 'angesom bahre',
-            'email' => 'angesomhailu1414@gmail.com',
+            'Fname' => 'angesom',
+            'Lname' => 'hailu',
+            'Email' => 'angesomhailu1414@gmail.com',
+            'User' => 'UGR/172185/12',
+            'Department' => 'software',
+            'Year' => '4',
         ]);
     }
 }
